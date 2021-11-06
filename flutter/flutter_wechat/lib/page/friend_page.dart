@@ -5,6 +5,6 @@ class FriendPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(child: Center(child: const Text('Friend Page')),);
   }
 }
