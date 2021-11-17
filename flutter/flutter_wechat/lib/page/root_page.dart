@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_wechat/page/chat_page.dart';
-import 'package:flutter_wechat/page/discover_page.dart';
+import 'package:flutter_wechat/page/discover/discover_page.dart';
 import 'package:flutter_wechat/page/friend_page.dart';
-import 'package:flutter_wechat/page/mine_page.dart';
+import 'package:flutter_wechat/page/mine/mine_page.dart';
 import 'package:flutter_wechat/widgets/my_asset_image.dart';
 
 class RootPage extends StatefulWidget {
@@ -12,7 +12,12 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   int _currentIndex = 0;
-  final List<Widget> _pages = [ChatPage(), FriendPage(), DiscoverPage(), MinePage()];
+  final List<Widget> _pages = [
+    ChatPage(),
+    FriendPage(),
+    DiscoverPage(),
+    MinePage()
+  ];
 
   @override
   Widget build(BuildContext context) {
